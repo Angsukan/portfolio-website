@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angsukan Chom-Insee | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Angsukan Chom-Insee, Data Analyst. Showcasing projects in customer segmentation, ETL pipelines, and market forecasting.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <span>&lt;</span>angsukan<span>/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <br><span>Angsukan Chom-Insee</span></h1>
+                    <h2>Data Analyst</h2>
+                    <p>I transform raw, complex data into actionable intelligence. Specializing in statistical analysis, ETL automation, machine learning segmentation, and interactive visual dashboards that drive business growth.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <!-- Terminal Visualization Graphic -->
+                <div class="hero-visual">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="terminal-title">bash - pipeline.py</div>
+                    </div>
+                    <div class="terminal-body" style="height: 200px; overflow-y: auto; font-family: 'JetBrains Mono', monospace;">
+                        <!-- Terminal lines will print dynamically via script.js -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Stats Indicator Widget -->
+            <div class="stats-widget">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Data Rows Processed</div>
+                        <div class="stat-value" id="stat-rows">4,812,900</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Model Evaluation Accuracy</div>
+                        <div class="stat-value" id="stat-accuracy">94.85%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">SQL Queries Run</div>
+                        <div class="stat-value" id="stat-queries">814</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p style="color: var(--text-muted); max-width: 800px; font-size: 1rem; margin-top: 1rem;">
+                I am a passionate Data Analyst dedicated to finding stories hidden within rows and columns. I combine quantitative training with technical mastery in Python, SQL, R, and Business Intelligence suites to create reliable automated pipelines and visualizations.
+            </p>
+            <p style="color: var(--text-muted); max-width: 800px; font-size: 1rem; margin-top: 1rem;">
+                Whether optimizing databases, segmenting target demographics, or creating interactive Shiny apps, I build solutions that bring clarity and insight to technical and non-technical stakeholders alike.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <!-- Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="bi-tools">BI Tools</button>
+                <button class="filter-btn" data-filter="r">R</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card" data-tags="python sql bi-tools">
+                    <div>
+                        <div class="project-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3 class="project-title">E-Commerce Customer Segmentation</h3>
+                        <p class="project-desc">Applied RFM (Recency, Frequency, Monetary) analysis and K-Means clustering algorithm on over 500k transactional records to define clear, high-value customer clusters.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">K-Means</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Tableau</span>
+                        </div>
+                    </div>
+                    <a href="#" class="project-link">
+                        Explore Case Study 
+                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-tags="python sql bi-tools">
+                    <div>
+                        <div class="project-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3 class="project-title">Automated ETL & KPI Dashboard</h3>
+                        <p class="project-desc">Constructed an automated data integration pipeline that fetches daily marketing metrics, cleans data in Postgres, and populates a high-performance PowerBI layout.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">ETL</span>
+                            <span class="project-tag">PowerBI</span>
+                        </div>
+                    </div>
+                    <a href="#" class="project-link">
+                        Explore Code 
+                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-tags="r">
+                    <div>
+                        <div class="project-icon">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3 class="project-title">Financial Market Forecasting</h3>
+                        <p class="project-desc">Built a time series analytics package utilizing ARIMA modeling in R. Wrapped the interface in R Shiny for end-user scenario simulations and projections.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">R</span>
+                            <span class="project-tag">ARIMA</span>
+                            <span class="project-tag">Time Series</span>
+                            <span class="project-tag">Shiny</span>
+                        </div>
+                    </div>
+                    <a href="#" class="project-link">
+                        Explore Application 
+                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's collaborate on data-driven solutions</h3>
+                    <p>Have an interesting project or problem to solve? Send me a message or find me on these networks. I am always open to exploring new challenges.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:angsukan@example.com" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <span>Email</span>
+                                <strong>angsukan@example.com</strong>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <span>GitHub Profile</span>
+                                <strong>github.com/angsukan</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-control" type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-control" type="email" id="email" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Angsukan Chom-Insee. Built with <span>&hearts;</span> for Data Analytics.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
