@@ -4,6 +4,8 @@ Welcome to my portfolio website repository! This project showcases my skills, ex
 
 Live Site: [https://angsukan.github.io/portfolio-website/](https://angsukan.github.io/portfolio-website/)
 
+*Note: Git credential helper configured and tested.*
+
 ---
 
 ## 🎨 Design & Aesthetic
